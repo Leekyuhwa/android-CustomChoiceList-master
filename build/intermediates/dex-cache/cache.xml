@@ -1,26 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" >
+<items version="2">
 
     <item
         jar="E:\Android_SDK\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.2\support-annotations-21.0.2.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="99373741f99a0556ee293c41e8faa1ca3ae8a4e6">
-        <dex dex="C:\Users\Coupang\Downloads\android-CustomChoiceList-master\android-CustomChoiceList-master\Application\build\intermediates\pre-dexed\debug\support-annotations-21.0.2-e1f3b9f7644b00c5c0306959bb7f31c78b02b33f.jar" />
+        jumboMode="false" revision="22.0.1" sha1="99373741f99a0556ee293c41e8faa1ca3ae8a4e6">
+        <dex
+            dex="C:\Users\Coupang\Downloads\android-CustomChoiceList-master\android-CustomChoiceList-master\Application\build\intermediates\pre-dexed\debug\support-annotations-21.0.2-e1f3b9f7644b00c5c0306959bb7f31c78b02b33f.jar" />
     </item>
     <item
         jar="C:\Users\Coupang\Downloads\android-CustomChoiceList-master\android-CustomChoiceList-master\Application\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\libs\internal_impl-21.0.2.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f">
-        <dex dex="C:\Users\Coupang\Downloads\android-CustomChoiceList-master\android-CustomChoiceList-master\Application\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-903784abfdfc7664bd7bc0b7a67880554d3d2ad1.jar" />
+        jumboMode="false" revision="22.0.1" sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f">
+        <dex
+            dex="C:\Users\Coupang\Downloads\android-CustomChoiceList-master\android-CustomChoiceList-master\Application\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-903784abfdfc7664bd7bc0b7a67880554d3d2ad1.jar" />
     </item>
     <item
         jar="C:\Users\Coupang\Downloads\android-CustomChoiceList-master\android-CustomChoiceList-master\Application\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3">
-        <dex dex="C:\Users\Coupang\Downloads\android-CustomChoiceList-master\android-CustomChoiceList-master\Application\build\intermediates\pre-dexed\debug\classes-b49f3741e85a142bfc0d7672d597222b159812df.jar" />
+        jumboMode="false" revision="22.0.1" sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3">
+        <dex
+            dex="C:\Users\Coupang\Downloads\android-CustomChoiceList-master\android-CustomChoiceList-master\Application\build\intermediates\pre-dexed\debug\classes-b49f3741e85a142bfc0d7672d597222b159812df.jar" />
     </item>
 
 </items>

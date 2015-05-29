@@ -20,5 +20,4 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_checked="false" android:color="#6000" />
     <item android:color="#09c" />
-</selector>
-<!-- From: file:/C:/Users/Coupang/Downloads/android-CustomChoiceList-master/android-CustomChoiceList-master/Application/src/main/res/color/hideable_text_color.xml -->
+</selector><!-- From: file:/C:/Users/Coupang/Downloads/android-CustomChoiceList-master/android-CustomChoiceList-master/Application/src/main/res/color/hideable_text_color.xml -->

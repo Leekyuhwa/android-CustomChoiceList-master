@@ -15,16 +15,12 @@
   -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:showDividers="middle"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:showDividers="middle"
     android:divider="?android:dividerHorizontal">
 
-    <TextView style="@style/Widget.DescriptionBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/intro_message" />
+    <TextView style="@style/Widget.DescriptionBar" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="@string/intro_message" />
 
     <!--
         When a ListView has a choiceMode set, it will allow users to "choose"
@@ -43,13 +39,8 @@
         you should set the android:scrollbarStyle such that the scrollbar
         doesn'isn't inset.
     -->
-    <ListView android:id="@android:id/list"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:paddingLeft="@dimen/page_margin"
-        android:paddingRight="@dimen/page_margin"
-        android:scrollbarStyle="outsideOverlay"
-        android:choiceMode="multipleChoice" />
-</LinearLayout>
-<!-- From: file:/C:/Users/Coupang/Downloads/android-CustomChoiceList-master/android-CustomChoiceList-master/Application/src/main/res/layout/sample_main.xml -->
+    <ListView android:id="@android:id/list" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1"
+        android:paddingLeft="@dimen/page_margin" android:paddingRight="@dimen/page_margin"
+        android:scrollbarStyle="outsideOverlay" android:choiceMode="multipleChoice" />
+</LinearLayout><!-- From: file:/C:/Users/Coupang/Downloads/android-CustomChoiceList-master/android-CustomChoiceList-master/Application/src/main/res/layout/sample_main.xml -->

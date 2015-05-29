@@ -21,7 +21,8 @@
     android:showDividers="middle"
     android:divider="?android:dividerHorizontal">
 
-    <TextView style="@style/Widget.DescriptionBar"
+    <TextView
+        style="@style/Widget.DescriptionBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/intro_message" />
@@ -43,7 +44,8 @@
         you should set the android:scrollbarStyle such that the scrollbar
         doesn'isn't inset.
     -->
-    <ListView android:id="@android:id/list"
+    <ListView
+        android:id="@android:id/list"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"

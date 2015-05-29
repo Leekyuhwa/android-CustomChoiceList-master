@@ -29,40 +29,40 @@ import android.widget.TextView;
  * the <code>res/layout/</code> directory of this sample.
  */
 public class MainActivity extends ListActivity {
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.sample_main);
-        setListAdapter(new MyAdapter());
-    }
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.sample_main);
+		setListAdapter(new MyAdapter());
+	}
 
-    /**
-     * A simple array adapter that creates a list of cheeses.
-     */
-    private class MyAdapter extends BaseAdapter {
-        @Override
-        public int getCount() {
-            return Cheeses.CHEESES.length;
-        }
+	/**
+	 * A simple array adapter that creates a list of cheeses.
+	 */
+	private class MyAdapter extends BaseAdapter {
+		@Override
+		public int getCount() {
+			return Cheeses.CHEESES.length;
+		}
 
-        @Override
-        public String getItem(int position) {
-            return Cheeses.CHEESES[position];
-        }
+		@Override
+		public String getItem(int position) {
+			return Cheeses.CHEESES[position];
+		}
 
-        @Override
-        public long getItemId(int position) {
-            return Cheeses.CHEESES[position].hashCode();
-        }
+		@Override
+		public long getItemId(int position) {
+			return Cheeses.CHEESES[position].hashCode();
+		}
 
-        @Override
-        public View getView(int position, View convertView, ViewGroup container) {
-            if (convertView == null) {
-                convertView = getLayoutInflater().inflate(R.layout.list_item, container, false);
-            }
+		@Override
+		public View getView(int position, View convertView, ViewGroup container) {
+			if (convertView == null) {
+				convertView = getLayoutInflater().inflate(R.layout.list_item, container, false);
+			}
 
-            ((TextView) convertView.findViewById(android.R.id.text1))
-                    .setText(getItem(position));
-            return convertView;
-        }
-    }
+			((TextView) convertView.findViewById(android.R.id.text1))
+				.setText(getItem(position));
+			return convertView;
+		}
+	}
 }

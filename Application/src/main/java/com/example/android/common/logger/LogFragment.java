@@ -48,62 +48,65 @@ import android.widget.ScrollView;
  */
 public class LogFragment extends Fragment {
 
-    private LogView mLogView;
-    private ScrollView mScrollView;
+	private LogView mLogView;
+	private ScrollView mScrollView;
 
-    public LogFragment() {}
+	public LogFragment() {
+	}
 
-    public View inflateViews() {
-        mScrollView = new ScrollView(getActivity());
-        ViewGroup.LayoutParams scrollParams = new ViewGroup.LayoutParams(
-                ViewGroup.LayoutParams.MATCH_PARENT,
-                ViewGroup.LayoutParams.MATCH_PARENT);
-        mScrollView.setLayoutParams(scrollParams);
+	public View inflateViews() {
+		mScrollView = new ScrollView(getActivity());
+		ViewGroup.LayoutParams scrollParams = new ViewGroup.LayoutParams(
+			ViewGroup.LayoutParams.MATCH_PARENT,
+			ViewGroup.LayoutParams.MATCH_PARENT);
+		mScrollView.setLayoutParams(scrollParams);
 
-        mLogView = new LogView(getActivity());
-        ViewGroup.LayoutParams logParams = new ViewGroup.LayoutParams(scrollParams);
-        logParams.height = ViewGroup.LayoutParams.WRAP_CONTENT;
-        mLogView.setLayoutParams(logParams);
-        mLogView.setClickable(true);
-        mLogView.setFocusable(true);
-        mLogView.setTypeface(Typeface.MONOSPACE);
+		mLogView = new LogView(getActivity());
+		ViewGroup.LayoutParams logParams = new ViewGroup.LayoutParams(scrollParams);
+		logParams.height = ViewGroup.LayoutParams.WRAP_CONTENT;
+		mLogView.setLayoutParams(logParams);
+		mLogView.setClickable(true);
+		mLogView.setFocusable(true);
+		mLogView.setTypeface(Typeface.MONOSPACE);
 
-        // Want to set padding as 16 dips, setPadding takes pixels.  Hooray math!
-        int paddingDips = 16;
-        double scale = getResources().getDisplayMetrics().density;
-        int paddingPixels = (int) ((paddingDips * (scale)) + .5);
-        mLogView.setPadding(paddingPixels, paddingPixels, paddingPixels, paddingPixels);
-        mLogView.setCompoundDrawablePadding(paddingPixels);
+		// Want to set padding as 16 dips, setPadding takes pixels.  Hooray math!
+		int paddingDips = 16;
+		double scale = getResources().getDisplayMetrics().density;
+		int paddingPixels = (int) ((paddingDips * (scale)) + .5);
+		mLogView.setPadding(paddingPixels, paddingPixels, paddingPixels, paddingPixels);
+		mLogView.setCompoundDrawablePadding(paddingPixels);
 
-        mLogView.setGravity(Gravity.BOTTOM);
-        mLogView.setTextAppearance(getActivity(), android.R.style.TextAppearance_Holo_Medium);
+		mLogView.setGravity(Gravity.BOTTOM);
+		mLogView.setTextAppearance(getActivity(), android.R.style.TextAppearance_Holo_Medium);
 
-        mScrollView.addView(mLogView);
-        return mScrollView;
-    }
+		mScrollView.addView(mLogView);
+		return mScrollView;
+	}
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+		Bundle savedInstanceState) {
 
-        View result = inflateViews();
+		View result = inflateViews();
 
-        mLogView.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+		mLogView.addTextChangedListener(new TextWatcher() {
+			@Override
+			public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+			}
 
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {}
+			@Override
+			public void onTextChanged(CharSequence s, int start, int before, int count) {
+			}
 
-            @Override
-            public void afterTextChanged(Editable s) {
-                mScrollView.fullScroll(ScrollView.FOCUS_DOWN);
-            }
-        });
-        return result;
-    }
+			@Override
+			public void afterTextChanged(Editable s) {
+				mScrollView.fullScroll(ScrollView.FOCUS_DOWN);
+			}
+		});
+		return result;
+	}
 
-    public LogView getLogView() {
-        return mLogView;
-    }
+	public LogView getLogView() {
+		return mLogView;
+	}
 }

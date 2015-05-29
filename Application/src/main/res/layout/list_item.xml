@@ -21,8 +21,7 @@
     implements the Checkable interface. Once the root view is checked, any children that
     have the duplicateParentState attribute set will inherit this "checked" state.
 -->
-<com.example.android.customchoicelist.CheckableLinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.example.android.customchoicelist.CheckableLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -36,7 +35,8 @@
         used in the textColor attribute causes its text color to change when its parent
         is checked or unchecked.
     -->
-    <TextView android:id="@android:id/text1"
+    <TextView
+        android:id="@android:id/text1"
         android:duplicateParentState="true"
         android:layout_width="0dp"
         android:layout_weight="1"
@@ -53,7 +53,8 @@
         ?android:listChoiceIndicatorMultiple or ?android:listChoiceIndicatorSingle. These
         are system theme attributes that reference a state list drawable.
     -->
-    <ImageView android:src="@drawable/ic_hideable_item"
+    <ImageView
+        android:src="@drawable/ic_hideable_item"
         android:duplicateParentState="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

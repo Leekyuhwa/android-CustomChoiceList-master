@@ -21,5 +21,4 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_checked="false" android:drawable="@drawable/ic_hideable_item_unchecked" />
     <item android:drawable="@drawable/ic_hideable_item_checked" />
-</selector>
-<!-- From: file:/C:/Users/Coupang/Downloads/android-CustomChoiceList-master/android-CustomChoiceList-master/Application/src/main/res/drawable/ic_hideable_item.xml -->
+</selector><!-- From: file:/C:/Users/Coupang/Downloads/android-CustomChoiceList-master/android-CustomChoiceList-master/Application/src/main/res/drawable/ic_hideable_item.xml -->
