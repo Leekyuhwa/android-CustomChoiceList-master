@@ -44,6 +44,8 @@ public class CheckableLinearLayout extends LinearLayout implements Checkable {
         return mChecked;
     }
 
+
+
     public void setChecked(boolean b) {
         if (b != mChecked) {
             mChecked = b;
